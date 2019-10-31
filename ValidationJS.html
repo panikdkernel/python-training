@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+           function check(){
+               var un=document.getElementById("name").value
+               var pass=document.getElementById("pass").value
+if(un=="Admin" && pass=="123"){
+    alert("Welcome "+un)
+   window.open("https://google.com/")
+}
+else{
+    alert("Invalid Credentials")
+}
+           }
+           
+            </script>
+    </head>
+    <body>
+            <center>
+            <form onsubmit="check()"></form>
+<h3>Login</h3 <br><br>
+       Enter Username <input type="text" required size="15" id="name"><br> <br>
+       Enter Password <input type="password" required size="15" id="pass"><br> <br>
+       <input type="submit" value="submit"> <input type="reset" value="clear">
+       </center>
+    </form>
+    </body>
+</html>
