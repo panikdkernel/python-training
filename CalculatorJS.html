@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <script>
+        /* function add(){
+             var a=parseInt(document.getElementById("num1").value)
+             var b=parseInt(document.getElementById("num2").value)
+             var c=a+b
+             document.getElementById("result").value=c
+     
+             
+         }
+         function sub(){
+             var a=parseInt(document.getElementById("num1").value)
+             var b=parseInt(document.getElementById("num2").value)
+             var c=a-b
+             document.getElementById("result").value=c
+            
+         }
+         function mul(){
+             var a=parseInt(document.getElementById("num1").value)
+             var b=parseInt(document.getElementById("num2").value)
+             var c=a*b
+             document.getElementById("result").value=c
+         }
+         function divi(){
+             var a=parseInt(document.getElementById("num1").value)
+             var b=parseInt(document.getElementById("num2").value)
+             var c=a/b
+             c=document.getElementById("result").value
+         }*/
+
+        function check(op) {
+            var a = parseInt(document.getElementById("num1").value)
+            var b = parseInt(document.getElementById("num2").value)
+        
+
+
+            if (op == "add") {
+                var c=a+b
+            document.getElementById("result").value =  c
+            document.getElementById("p").innerHTML="Answer is "+c
+               }
+            else if (op == "sub") {
+                var c=a-b
+            document.getElementById("result").value= c
+            document.getElementById("p").innerHTML="Answer is "+c
+            }
+            else if (op == "mul") {
+                var c=a*b
+            document.getElementById("result").value = c
+            document.getElementById("p").innerHTML="Answer is "+c
+            }
+            else {
+                var c=a/b
+            document.getElementById("result").value= c
+            document.getElementById("p").innerHTML="Result is "+c
+            }
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <center>
+        <h2>Calculator</h2><br>
+        Enter 1st Number <input type="number" id="num1" required><br> <br>
+        Enter 2nd Number <input type="number" id="num2" required><br> <br>
+        <button onclick="check('add')" id="op" value="add">Add</button>
+        <button onclick="check('sub')" id="op" value="sub">sub</button>
+        <button onclick="check('mul')" id="op" value="mul">mul</button>
+        <button onclick="check('divi')" id="op" value="divi">div</button><br><br>
+        Result <input type="text" disabled id="result">
+        <p id="p">Result is:</p>
+
+
+
+
+
+    </center>
+
+</body>
+
+</html>
